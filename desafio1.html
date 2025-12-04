@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Card Profissional</title>
+    <style>
+        .card {
+    width: 260px; /* largura real do componente */
+    padding: 16px; /* espaço interno confortável */
+    margin: 40px auto; /* distancia vertical + centralização */
+    border: 2px solid rgb(89, 202, 255);
+    border-radius: 8px; /* cantos mais profissionais */
+    background: #fff; /* cards devem ter fundo próprio */
+}
+
+/* imagem */
+.card-img {
+    width: 100%;
+    display: block; /* remove espaço extra em imagens inline */
+    border-radius: 6px;
+    margin-bottom: 12px; /* separa imagem do título */
+}
+
+/* título */
+.card-title {
+    color: rgb(2, 115, 207);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* texto */
+.card-text {
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 16px; /* separação visual boa */
+}
+
+/* botão */
+.card-button {
+    display: inline-block;  
+    padding: 10px 16px; /* forma real do botão */
+    border: 2px solid rgb(80, 185, 255);
+    border-radius: 6px;
+    color: rgb(47, 171, 253);
+    background-color: transparent;
+    text-decoration: none; /* remove sublinhado */
+    font-weight: 600;
+}
+
+/* hover */
+.card-button:hover {
+    background-color: rgb(80, 185, 255);
+    color: white;
+    cursor: pointer;
+}
+.card{
+            width: 200px;
+            padding: 10%;
+            margin: 15%;
+            border: 2px solid rgb(89, 202, 255);
+            border-radius: 5%;
+        }
+        .card-img{
+            width: 100%;
+            border-radius: 1;
+            background-color: rgb(133, 158, 240);
+            padding: 4%;
+
+        }
+        .card-title{
+            width: auto;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(2, 115, 207);
+            font-size: x-large;
+        }
+        .card-text{
+            color: black;
+            line-height: normal;
+        }
+        .card-button{
+            color: rgb(47, 171, 253);
+            border: 1cap solid rgb(80, 185, 255);
+            background-color: transparent;
+        }
+        .card-button :hover{
+            background-color: brown;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="images.jpeg" alt="Imagem do card" class="card-img">
+
+        <h2 class="card-title">Título do Card</h2>
+
+        <p class="card-text">
+            Este é um card simples para treinar box-model, tipografia e seletores.
+            Ajusta margens, espaçamentos, bordas, larguras e cores como preferires.
+        </p>
+
+        <a href="#" class="card-button">Ler mais</a>
+    </div>
+
+</body>
+</html>
