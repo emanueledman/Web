@@ -7,13 +7,104 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .head{
-            background: black;
-        }
+    background: rgb(0, 0, 0);
+    display: block;
+    color: white;
+}
+
+.head-menu{
+    display: flex;
+    gap: 8px;
+    color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.contacto{
+    display: flex;
+    gap: 20px;
+    padding: 7px;
+    
+}
+
+.contacto a{
+    padding: 14px;
+    background: #c9f31d;
+    display: block;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contacto a:hover{
+    padding: 14px;
+    background: rgb(255, 255, 255);
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu a{
+    padding: 14px;
+    align-content: center;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+.hero{
+    background: black;
+    background-size: cover;
+}
+
+.hero .hero1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    padding: 70px;
+}
+
+.hero h1{
+   font-size: 128px;
+   font-style: normal;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero p{
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+hr{
+    background-color : #c9f31d;
+    width: auto;
+    height: 2px;
+    margin: 0%;
+    border: 0ch;
+}
+
+h1 .para{
+   color: #c9f31d;
+}
     </style>
 </head>
 <body>
    <header class="head">
-        <div>
+        <div class="head-menu">
             <a href="#edman">
                 <div class="logo">
                     <img class="img-log" src="httias-react-js.netlify.app/assets/banner-man-62844818.png" alt="Logo">
@@ -31,10 +122,26 @@
                     <a href="#contact">Contact</a>
                 </nav>
             </div>
-            <div class="">
-                
+            <div class="contacto">
+                <a href="#" >Contactar</a>
+                <a href="#" >Entrar</a>
             </div>
         </div>
    </header> 
+   <section class="hero">
+        <div class="hero1">
+            <div class="hero-content">
+                <p>Currently available for freelanceworldwide</p>
+                <hr>
+                <h1>Creative Visual <strong class="para">Designer</strong></h1>
+            </div>
+            <div class="hero-img">
+                <img src="https://matias-react-js.netlify.app/assets/banner-man-62844818.png" alt="imagem hero">
+            </div>
+        </div>
+   </section>
+   <section class="sobre">
+        <h1>eman</h1>
+   </section>
 </body>
 </html>
