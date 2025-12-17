@@ -6,8 +6,12 @@
     <title>Portifolio - Desafio</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .head{
-    background: rgb(0, 0, 0);
+
+        body{
+            background-color: black;
+        }
+.head{
+
     display: block;
     color: white;
 }
@@ -66,7 +70,7 @@
 }
 
 .hero{
-    background: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.945)), url("https://st2.depositphotos.com/3336339/11014/i/450/depositphotos_110148758-stock-photo-abstract-white-tunnel-3d-background.jpg");
     background-size: cover;
 }
 
@@ -99,6 +103,60 @@ hr{
 
 h1 .para{
    color: #c9f31d;
+}
+
+.barra{
+    height: 70px;
+    background-color: #c9f31d;
+
+}
+.about p{
+    color: white;
+    font-size: 32px;
+}
+
+.about-content{
+    padding: 32px;
+    justify-items: center;
+}
+.about-link{
+    display: flex;
+
+    gap: 14px;
+
+}
+.about-link a{
+    padding: 14px;
+    background-color: rgba(255, 255, 255, 0.295);
+    color: white;
+    text-decoration: none;
+
+}
+
+.about-link a:hover{
+    padding: 14px;
+    background-color:#c9f31d;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+.about-card{
+    color: white;
+    padding: 60px;
+    justify-items: center;
+}
+
+.about-card{
+    display: flex;
+    gap: 16px;
+}
+
+.img-card img{
+    height: 440px;
+    width: auto;
+}
+.card-cont{
+    background: #dfdfdf18;
 }
     </style>
 </head>
@@ -140,8 +198,42 @@ h1 .para{
             </div>
         </div>
    </section>
-   <section class="sobre">
+   <section class="barra">
         <h1>eman</h1>
+   </section>
+   <sections class="about" id="about">
+        <div class="about-content">
+            <header class="about-head">
+                <p>I'm David Matias, I'm a Brand & Webflow Designer, Currently residing in the lush Victoria Street London, Matias operates globally and is ready to take on any design challenge.</p>
+            </header>
+            <div class="about-link">
+                <a href="#sobre">Sobre</a>
+                <a href="#projecto">Projectos</a>
+                <a href="#exper">Experiencia</a>
+                <a href="#"></a>
+            </div>
+            <div class="about-card">
+                <div class="img-card">
+                    <img src="https://matias-react-js.netlify.app/assets/banner-man-62844818.png" alt="card img">
+                </div>
+                <div class="card-cont">
+                    <div class="card-tex">
+                        <h2>Personal Info</h2>
+
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+EmailMatias999@Gmail.Com
+Phone+(2) 871 382 023
+PhoneVictoria Street London,
+Follow
+
+
+                    </div>
+                    <div class="sub-card">
+
+                    </div>
+                </div>
+            </div>
+        </div>
    </section>
 </body>
 </html>
