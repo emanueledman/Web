@@ -1,33 +1,402 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
+    <meta name="description" content="Portfólio de Edman - Creative Visual Designer disponível para freelance worldwide">
+    <meta name="keywords" content="design, portfolio, freelance, visual designer, web design">
+    <meta name="author" content="Edman">
+    <title>Edman - Creative Visual Designer | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary-color: #c9f31d;
+            --bg-dark: #000000;
+            --text-light: #ffffff;
+            --text-dark: #000000;
+            --spacing-xs: 8px;
+            --spacing-sm: 14px;
+            --spacing-md: 20px;
+            --spacing-lg: 32px;
+            --spacing-xl: 60px;
+            --spacing-xxl: 70px;
+            --transition: all 0.3s ease;
+        }
 
-    .card {
-    width: 200px;
-    padding: 10px;
-    border: 2px solid #000;
-    margin: 30px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+.head {
+    padding: var(--spacing-md);
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
-    h1{
-        color: green;
+
+.head-menu {
+    display: flex;
+    gap: var(--spacing-xs);
+    color: var(--text-light);
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.img-log {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contacto {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.contacto a {
+    padding: var(--spacing-sm);
+    background: var(--primary-color);
+    color: var(--text-dark);
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.contacto a:hover {
+    background: var(--text-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 243, 29, 0.3);
+}
+
+.menu a {
+    padding: var(--spacing-sm);
+    font-size: 18px;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: var(--transition);
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    background-color: var(--text-light);
+    color: var(--text-dark);
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)), 
+                url("https://st2.depositphotos.com/3336339/11014/i/450/depositphotos_110148758-stock-photo-abstract-white-tunnel-3d-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xxl);
+    color: var(--text-light);
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 8vw, 128px);
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.1;
+    margin: var(--spacing-md) 0;
+}
+
+.hero p {
+    font-size: clamp(18px, 2vw, 32px);
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-img img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(201, 243, 29, 0.2);
+}
+
+hr {
+    background-color: var(--primary-color);
+    width: 100px;
+    height: 3px;
+    border: none;
+    margin: var(--spacing-md) 0;
+}
+
+.para {
+    color: var(--primary-color);
+}
+
+.barra {
+    height: var(--spacing-xxl);
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.about {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about p {
+    color: var(--text-light);
+    font-size: clamp(18px, 2vw, 32px);
+    line-height: 1.6;
+}
+
+.about-content {
+    padding: var(--spacing-lg);
+}
+
+.about-head {
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.about-link {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    margin: var(--spacing-xl) 0;
+    flex-wrap: wrap;
+}
+
+.about-link a {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+}
+
+.about-link a:hover {
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    transform: translateY(-2px);
+    border-color: var(--primary-color);
+}
+
+.about-card {
+    display: flex;
+    gap: var(--spacing-lg);
+    color: var(--text-light);
+    margin-top: var(--spacing-xl);
+    align-items: flex-start;
+}
+
+.img-card {
+    flex-shrink: 0;
+}
+
+.img-card img {
+    height: 440px;
+    width: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card-cont {
+    background: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    flex: 1;
+    backdrop-filter: blur(10px);
+}
+
+.card-tex h2 {
+    font-size: 36px;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.card-tex p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+}
+
+.card-info {
+    margin-top: var(--spacing-md);
+}
+
+.card-info p {
+    margin: var(--spacing-xs) 0;
+    font-size: 18px;
+}
+
+.card-info strong {
+    color: var(--primary-color);
+    margin-right: var(--spacing-xs);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .hero .hero1 {
+        flex-direction: column;
+        text-align: center;
     }
-    .texto{
-        color: red;
+    
+    .hero h1 {
+        font-size: 72px;
     }
-    #destaque{
-        color: blue;
+    
+    .about-card {
+        flex-direction: column;
+        align-items: center;
     }
-</style>
+}
+
+@media (max-width: 768px) {
+    .head-menu {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .menu {
+        order: 3;
+    }
+    
+    .menu-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-xs);
+    }
+    
+    .hero h1 {
+        font-size: 48px;
+    }
+    
+    .img-card img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+    </style>
+</head>
 <body>
-    <div class="card">
-        <h1>Meu titulo</h1>
-        <p class="texto">Paragrafo de test</p>
-        <p id="destaque">texto destacado</p>
-    </div>
+   <header class="head">
+        <div class="head-menu">
+            <a href="#edman">
+                <div class="logo">
+                    <img class="img-log" src="https://matias-react-js.netlify.app/assets/banner-man-62844818.png" alt="Logo Edman">
+                    <h2>Edman</h2>
+                </div>
+            </a>
+            <div class="menu">
+                <nav class="menu-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#Work">Work</a>
+                    <a href="#services">Services</a>
+                    <a href="#testimonial">Testimonial</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="contacto">
+                <a href="#" >Contactar</a>
+                <a href="#" >Entrar</a>
+            </div>
+        </div>
+   </header> 
+   <section class="hero">
+        <div class="hero1">
+            <div class="hero-content">
+                <p>Currently available for freelanceworldwide</p>
+                <hr>
+                <h1>Creative Visual <span class="para">Designer</span></h1>
+            </div>
+            <div class="hero-img">
+                <img src="https://matias-react-js.netlify.app/assets/banner-man-62844818.png" alt="imagem hero">
+            </div>
+        </div>
+   </section>
+   <section class="barra">
+        <h1>eman</h1>
+   </section>
+   <section class="about" id="about">
+        <div class="about-content">
+            <header class="about-head">
+                <p>I'm David Matias, I'm a Brand & Webflow Designer. Currently residing in the lush Victoria Street London, Matias operates globally and is ready to take on any design challenge.</p>
+            </header>
+            <div class="about-link">
+                <a href="#sobre">Sobre</a>
+                <a href="#projecto">Projectos</a>
+                <a href="#exper">Experiencia</a>
+                <a href="#skills">Skills</a>
+            </div>
+            <div class="about-card">
+                <div class="img-card">
+                    <img src="https://matias-react-js.netlify.app/assets/banner-man-62844818.png" alt="David Matias - Visual Designer">
+                </div>
+                <div class="card-cont">
+                    <div class="card-tex">
+                        <h2>Personal Info</h2>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil.</p>
+                        <div class="card-info">
+                            <p><strong>Email:</strong> Matias999@Gmail.Com</p>
+                            <p><strong>Phone:</strong> +(2) 871 382 023</p>
+                            <p><strong>Location:</strong> Victoria Street London</p>
+                            <p><strong>Follow:</strong> @edman_designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
 </body>
 </html>
